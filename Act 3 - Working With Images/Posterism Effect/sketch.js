@@ -9,7 +9,7 @@ img = loadImage("SUN.jpg");
 
 function setup () {
 // Creating a canvas for window.
-createCanvas (400, 400);
+createCanvas (800, 700);
 // Setting the background color to "0" 
 background(0);
 
