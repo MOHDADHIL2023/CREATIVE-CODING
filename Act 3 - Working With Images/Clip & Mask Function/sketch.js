@@ -6,13 +6,13 @@ function preload(){
 }
 
 function setup() {
-  // Creating a canvas with a width of 700 and a height of 700.
+  // Creating a canvas with a width 800 and a height 700.
   createCanvas(800, 700);
   
-  // Setting the background color to a pale blue.
+  // Setting the background color.
   background(190, 220, 250);
   
-  // Image inside shape using clip function - only works with one shape.
+  // Image inside shape using clip function.
   img.resize(200, 200); // Resizing the size of the image.
   
   // Creating a sub-canvas for the clipped image.
@@ -30,7 +30,7 @@ function setup() {
   // Put the sub-canvas inside the main canvas.
   image(cnv7, 350, 225); 
   
-  // Image inside shape using mask function - works with multiple shapes.
+  // Image inside shape using mask function.
   img.resize(300, 300); // Resizing the size of the image.
   
   // Create another sub-canvas.
