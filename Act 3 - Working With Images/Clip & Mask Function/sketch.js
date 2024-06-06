@@ -7,7 +7,7 @@ function preload(){
 
 function setup() {
   // Creating a canvas with a width of 700 and a height of 700.
-  createCanvas(700, 700);
+  createCanvas(800, 700);
   
   // Setting the background color to a pale blue.
   background(190, 220, 250);
@@ -19,7 +19,7 @@ function setup() {
   let cnv7 = createGraphics(200, 200);
   
   // Drawing a rounded rectangle as the clipping shape.
-  cnv7.rect(10, 10, 180, 180, 20);
+  cnv7.rect(10, 20, 180, 180, 10);
   
   // Apply a clip to the sub-canvas
   cnv7.canvas.getContext("2d").clip();
@@ -31,13 +31,13 @@ function setup() {
   image(cnv7, 350, 225); 
   
   // Image inside shape using mask function - works with multiple shapes.
-  img.resize(200, 200); // Resizing the size of the image.
+  img.resize(300, 300); // Resizing the size of the image.
   
   // Create another sub-canvas.
   let cnv5 = createGraphics(200, 200);
   
   // Drawing a circle as the masking shape
-  cnv5.circle(100, 0, 200); 
+  cnv5.circle(100, 0, 300); 
   
   // Applying mask to the image using the circle drawn on the sub-canvas
   img.mask(cnv5);
